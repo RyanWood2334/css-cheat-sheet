@@ -1,0 +1,118 @@
+::selection {
+    background-color: slateblue;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(49, 48, 56);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     color: rgb(194, 82, 179);
+    background-color: rgb(49, 48, 56);
+    font-size: 50px;
+    height: 15vh;
+    text-align: center;
+ }
+
+ header p {
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    justify-content: space-around;
+}
+
+
+
+footer {
+    width:200px;
+    background-color: rgb(49, 48, 56);
+    
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin:2% 0;
+    padding:1% 2%;
+    border: 2px dashed white  ;
+    color: rgb(194, 82, 179);
+    border-radius: 8px;
+
+}
+
+pre {
+    background:linear-gradient( rgb(194, 82, 179),rgb(49, 48, 56));
+    padding:2%;
+    border-radius: 5px;
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 12px;
+
+      }
+
+.card:hover, .card:hover h2 {
+    box-shadow: 0 0 10px  rgb(194, 82, 179),
+    0 0 10px rgb(194, 82, 179);
+}
+
+#description {
+    color: white;
+    font-size: 15px;
+}
+
+.card h2 {
+    position: relative;
+    margin-top: -30px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 150%;
+    background-color: rgb(49, 48, 56);
+}
+
+span {
+    color: chartreuse;
+}
+
+code {
+    user-select: all;
+}
+        
+
+@media screen and (max-width: 992px) {
+    .card {
+       width:45%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+ width:90%
+    }
+    header{
+        flex-shrink: 1;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
